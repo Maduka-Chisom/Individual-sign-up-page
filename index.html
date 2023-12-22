@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individual Sign up page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600&family=Jost:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="form-description">
+          <img src="./asset/Logo-(1).svg" alt="company's logo" class="logo" />
+          <h1>For Individuals</h1>
+          <p>
+            Inspiring wholesome harmony for the mind, body and spirit, for
+            everyone, everywhere.
+          </p>
+          <p>
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organization wellness.
+          </p>
+        </div>
+        <form action="/signup" method="post">
+          <div>
+            <label for="firstname">First Name</label>
+            <input
+              class="first-child"
+              type="text"
+              name="firstname"
+              id="firstname"
+              autocomplete="on"
+              placeholder="Tolu"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="lastname">Last Name</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              autocomplete="on"
+              required
+            />
+          </div>
+
+          <div class="select">
+            <label for="gender-select">Gender</label>
+            <select name="gender" id="gender-select" required>
+              <option value="" disabled selected>Select here</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <img class="dropdown-icon" src="./asset/u_angle-down.svg" alt="" />
+          </div>
+
+          <div class="dob">
+            <label for="date-of-birth">Date of Birth</label>
+
+            <input
+              type="text"
+              name="date-of-birth"
+              id="date-of-birth"
+              required
+              placeholder="Select here"
+            />
+            <img
+              class="calender-icon"
+              src="./asset/u_a_calendar-alt.svg"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <label for="weight">Weight (KG)</label>
+            <input
+              type="text"
+              name="weight"
+              id="weight"
+              required
+              placeholder="Enter weight"
+            />
+          </div>
+
+          <div>
+            <label for="height">Height (CM)</label>
+            <input
+              type="text"
+              name="height"
+              id="height"
+              required
+              placeholder="Enter height here"
+            />
+          </div>
+
+          <div class="select select-desktop">
+            <label for="activity-level">Activity Level</label>
+            <select name="activity-level" id="activity-level" required>
+              <option value="" disabled selected>Select here</option>
+              <option value="sedentary">Sedentary</option>
+              <option value="lightly-active">Lightly Active</option>
+              <option value="moderately-active">Moderately Active</option>
+              <option value="active">Active</option>
+              <option value="very-active">Very Active</option>
+              <option value="highly-active">Highly Active</option>
+            </select>
+            <img class="dropdown-icon" src="./asset/u_angle-down.svg" alt="" />
+          </div>
+
+          <div class="password">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+
+            <img class="password-icon" src="./asset/show.svg" alt="" />
+          </div>
+
+          <p class="terms-and-conditions terms-and-cond-01">
+            By clicking Register, you agree to our
+            <a href="#">Terms of Use</a> and our<a href="#"> Privacy Policy</a>
+          </p>
+          <button>Register</button>
+        </form>
+        <p class="terms-and-conditions terms-and-cond-02">
+          By clicking Register, you agree to our
+          <a href="#">Terms of Use</a> and our<a href="#"> Privacy Policy</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
