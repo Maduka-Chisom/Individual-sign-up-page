@@ -95,8 +95,9 @@ div > .first-child::placeholder {
 
 input:focus,
 select:focus {
-  border: 3px solid var(--CL-Green);
-  opacity: 0.9;
+  /* border: 3px solid var(--CL-Green) */
+  box-shadow: 0 0 0 0.1rem var(--CL-Green);
+  /* opacity: 0.9; */
   outline: none;
 }
 
@@ -147,7 +148,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(52, 226, 209);
+  background-color: rgb(47, 208, 192);
   transition: all 0.5s;
 }
 
