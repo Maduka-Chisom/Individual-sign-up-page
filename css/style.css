@@ -112,6 +112,7 @@ div > select {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
+  background-color: inherit;
 }
 
 .select,
